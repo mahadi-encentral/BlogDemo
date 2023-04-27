@@ -16,6 +16,9 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long postId;
 
+    @Column(name = "title", nullable = false)
+    private String title;
+
     @Column(name = "content", nullable = false)
     private String content;
 
@@ -35,18 +38,24 @@ public class Post {
     public Post() {
     }
 
-    public Post(String content, User author) {
+    public Post(String title, String content, User author) {
         this.content = content;
         this.author = author;
+        this.title = title;
     }
 
     public long getPostId() {
         return postId;
     }
 
-    public void setPostId(long postId) {
-        this.postId = postId;
+    public String getTitle() {
+        return title;
     }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
 
     public String getContent() {
         return content;
@@ -92,8 +101,9 @@ public class Post {
     public String toString() {
         return "Post{" +
                 "postId=" + postId +
+                "title=" + title +
                 ", content='" + content + '\'' +
-                ", author=" + author +
+                ", author=" + author.getName() +
                 ", comments=" + comments +
                 ", createdAt=" + createdAt +
                 ", updatedAt=" + updatedAt +

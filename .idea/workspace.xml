@@ -4,27 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eb43fb0-41eb-4feb-a7cf-42415812bffa" name="Changes" comment="Initial Set Up">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/drivers/GeneralMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/drivers/UserDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/interfaces/CrudOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+    <list default="true" id="4eb43fb0-41eb-4feb-a7cf-42415812bffa" name="Changes" comment="Finishing Up Tasks">
+      <change afterPath="$PROJECT_DIR$/src/main/java/drivers/AppDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drivers/UserDriverHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/PostRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/repositories/PostRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/repositories/UserRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/GeneralMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/GeneralMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/UserDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/BaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +33,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -67,12 +62,25 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/MAHADI/Documents/Java Projects/BlogDemo/src/main/resources"
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/MAHADI/Documents/Java Projects/BlogDemo/src/test/resources",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MAHADI\Documents\Java Projects\BlogDemo\src\test\resources" />
       <recent name="C:\Users\MAHADI\Documents\Java Projects\BlogDemo\src\main\resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="repositories" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="drivers" />
@@ -80,12 +88,98 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn clean install" />
       <command value="mvn install" />
       <command value="mvn clean" />
       <command value="mvn compile" />
       <command value="mvn clean compile" />
+      <command value="mvn clean install" />
     </option>
+  </component>
+  <component name="RunManager" selected="Application.AppDriver">
+    <configuration name="AppDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="drivers.AppDriver" />
+      <module name="BlogDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="drivers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BlogDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="repositories" />
+      <option name="MAIN_CLASS_NAME" value="repositories.PostRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostRepositoryTest.testCreateAndGetOnePost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BlogDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="repositories" />
+      <option name="MAIN_CLASS_NAME" value="repositories.PostRepositoryTest" />
+      <option name="METHOD_NAME" value="testCreateAndGetOnePost" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BlogDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="repositories" />
+      <option name="MAIN_CLASS_NAME" value="repositories.UserRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest.myPosts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BlogDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="repositories" />
+      <option name="MAIN_CLASS_NAME" value="repositories.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="myPosts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AppDriver" />
+        <item itemvalue="JUnit.UserRepositoryTest.myPosts" />
+        <item itemvalue="JUnit.UserRepositoryTest" />
+        <item itemvalue="JUnit.PostRepositoryTest" />
+        <item itemvalue="JUnit.PostRepositoryTest.testCreateAndGetOnePost" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -96,6 +190,14 @@
       <option name="presentableId" value="Default" />
       <updated>1682364871479</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial Set Up">
+      <created>1682463384153</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682463384153</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +213,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Set Up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Set Up" />
+    <MESSAGE value="Finishing Up Tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finishing Up Tasks" />
   </component>
 </project>

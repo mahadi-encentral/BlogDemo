@@ -23,7 +23,6 @@ public class GeneralMenu {
             try{
                 System.out.print("\nyour choice: ");
                 choice = in.nextInt();
-                in.nextLine();
             }catch (InputMismatchException e){
                 System.out.println("Invalid Choice!!");
             }
